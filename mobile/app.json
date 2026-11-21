@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "HabitTrack",
+    "slug": "habittrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B1020",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.habittrack.app",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-status-bar",
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}
